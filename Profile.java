@@ -1,9 +1,6 @@
 import java.util.*;
-public String  getresponse(String res){
-    getresponse(String res){
-        this.getresponse()
-    }
-}
+
+
 
 public class Profile {
     private String name;
@@ -11,14 +8,14 @@ public class Profile {
     private String email;
     private List<String> subjects;
     private String preferredAI;
-    private String response ;
+   
     public Profile(String name, String grade, String email, List<String> subjects, String preferredAI, String  response) {
         this.name = name;
         this.grade = grade;
         this.email = email;
         this.subjects = subjects;
         this.preferredAI = preferredAI;
-        this.response = response;
+        
 
     }
     
@@ -36,10 +33,9 @@ public class Profile {
     public void setSubjects(List<String> subjects) { this.subjects = subjects; }
     public void setPreferredAI(String preferredAI) { this.preferredAI = preferredAI; }
     public void setprefeered(String response){
-        this.response =  response;
-       while(response!=null){
-
-       }
+        
+       
     
     }
+
 }
