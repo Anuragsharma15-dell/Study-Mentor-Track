@@ -3,7 +3,7 @@ import java.io.*;
 
 public class AIProvider {
     private String providerName;
-    private String apiKey=""
+    private String apiKey="";
     private boolean available;
 
     public AIProvider(String providerName) {
@@ -57,7 +57,7 @@ public class AIProvider {
     String jsonInput = "{"
             + "\"model\": \"gpt-3.5-turbo\","
             + "\"messages\": [{\"role\": \"user\", \"content\": \"" + escapeJson(question) + "\"}]"
-            + "}";
+            + "}"; //GSON 
 
     try (OutputStream os = conn.getOutputStream()) {
         os.write(jsonInput.getBytes("UTF-8"));
