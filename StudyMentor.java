@@ -3,6 +3,8 @@ import java.io.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 
+
+
 public class StudyMentor {
 
 
@@ -16,6 +18,7 @@ public class StudyMentor {
     private static List<String> conversationHistory;
 
     public static void main(String[] args) {
+       
 
         scanner = new Scanner(System.in);
         dataHandler = new DataHandler();
@@ -108,7 +111,8 @@ public class StudyMentor {
 
         currentAIProvider = (choice == 1) ? "OpenAI" : "Gemini";
 
-        profile = new Profile(name, grade, email, subjects, currentAIProvider);
+        profile = new Profile( name,  grade, email,   subjects, currentAIProvider);
+            
 
         dataHandler.saveProfile(profile);
 
@@ -139,14 +143,18 @@ public class StudyMentor {
         System.out.print(Colors.CYAN + "Enter choice: " + Colors.RESET);
     }
 
-
     private static int getChoice(int max) {
+
         try {
             int c = Integer.parseInt(scanner.nextLine().trim());
             if (c >= 0 && c <= max) return c;
         } catch (Exception ignored) {}
         return -1;
     }
+
+
+
+
 
 
     private static void askQuestion() {
@@ -181,6 +189,11 @@ public class StudyMentor {
         scanner.nextLine();
     }
 
+
+
+
+
+      
 
     private static void createStudyPlan() {
         System.out.print("\nSubject: ");
@@ -366,6 +379,8 @@ public class StudyMentor {
 
         System.out.println("\nPress Enter...");
         scanner.nextLine();
+        scanner.nextLine();
+
     }
 
 
@@ -377,3 +392,4 @@ public class StudyMentor {
     }
 
 }
+
