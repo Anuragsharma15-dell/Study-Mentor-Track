@@ -1,11 +1,17 @@
-{
+[{
   "name": "e",
   "grade": "",
   "email": "",
   "preferredAI": "Gemini",
   "subjects": ["hindi"]
-}
+},
 {
   "name":"Anurag",
-  "grade":"college"
+  "grade":"college",
+},
+{
+  "name":"Anurag",
+  "email":""
+
 }
+]
